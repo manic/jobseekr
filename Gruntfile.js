@@ -186,7 +186,7 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
             app: {
-                src: ['<%= config.app %>/index.html'],
+                src: ['<%= config.app %>/index.html', '<%= config.app %>/resume.html', '<%= config.app %>/portfolio.html'],
                 ignorePath: '<%= config.app %>/',
                 exclude: ['<%= config.app %>/bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js']
             },
@@ -218,7 +218,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: '<%= config.app %>/index.html'
+            html: ['<%= config.app %>/index.html', '<%= config.app %>/resume.html', '<%= config.app %>/portfolio.html']
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -232,6 +232,9 @@ module.exports = function (grunt) {
 
         // The following *-min tasks produce minified files in the dist folder
         imagemin: {
+            options: {
+                optimizationLevel: 0
+            },
             dist: {
                 files: [{
                     expand: true,
