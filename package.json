@@ -4,7 +4,8 @@
   "dependencies": {
     "logfmt": "~0.21.0",
     "express": "~3.5.0",
-    "grunt": "~0.4.3"
+    "grunt": "~0.4.3",
+    "connect": "~2.14.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
