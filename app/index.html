@@ -15,6 +15,13 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
+        <script src="//cdn.ravenjs.com/1.1.11/jquery,native/raven.min.js"></script>
+        <script>
+        Raven.config('https://35f58259a9054a82bf5dc99ce5fe2ed6@app.getsentry.com/20636', {
+            // we highly recommend restricting exceptions to a domain in order to filter out clutter
+            // whitelistUrls: ['example.com/scripts/']
+        }).install();
+        </script>
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
