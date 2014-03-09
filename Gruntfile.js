@@ -68,14 +68,14 @@ module.exports = function (grunt) {
         // The actual grunt server settings
         connect: {
             options: {
-                port: 2222,
+                port: '2222',
                 livereload: 35735,
                 // Change this to '0.0.0.0' to access the server from outside
                 hostname: 'localhost'
             },
             livereload: {
                 options: {
-                    open: true,
+                    open: 'http://josephj.jobseekr.dev',
                     base: [
                         '.tmp',
                         '<%= config.app %>'
