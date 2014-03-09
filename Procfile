@@ -1,1 +1,1 @@
-web: grunt server --port 80
+web: node web.js
