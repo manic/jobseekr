@@ -1,7 +1,11 @@
 {
-  "name": "jobseeker",
+  "name": "JobSeekr",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "logfmt": "~0.21.0",
+    "express": "~3.5.0",
+    "grunt": "~0.4.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
@@ -29,5 +33,24 @@
   },
   "engines": {
     "node": ">=0.8.0"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "2f237faa396765a602ccd70a98bc3609b4be16fc",
+  "description": "Job Seekr ---------",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/josephj/jobseekr.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/josephj/jobseekr/issues"
   }
 }
