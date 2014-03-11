@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="josephj6802@gmail.com">
+  <meta name="created" content="2014-03-07">
+  <title>Popular Destinations</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="_popular_destination_list.css">
+</head>
+<body>
+  <div id="popular-destination-list" class="mod">
+    <div class="mod-content">
+      <div class="hd">
+        <h1>Popular Destinations</h1>
+      </div>
+      <div class="bd clearfix"></div>
+    </div>
+  </div>
+  <script type="text/html" id="tpl-city">
+  <li>
+    <a href="#{{id}}" class="city-link" id="city-link-{{id}}" hidefocus>
+      {{name}}
+      <span class="badge">{{count}}</span>
+      <div class="tooltip">{{content}}</div>
+    </a>
+  </li>
+  </script>
+  <script src="utils.js"></script>
+  <script src="data.js"></script>
+  <script src="_popular_destination_list.js"></script>
+</body>
+</html>
