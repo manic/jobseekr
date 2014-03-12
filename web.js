@@ -1,3 +1,6 @@
+// Add New Relic Monitoring
+require('newrelic');
+
 var util = require('util'),
     connect = require('connect'),
     port = Number(process.env.PORT || 2222);
