@@ -1,0 +1,49 @@
+body {
+  font: small/1.2 Arial,Helvetica,sans-serif;
+  color: #003580;
+}
+h1, ul, li, p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a:link, a:visited {
+  color: #0896ff;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  color: #feba02;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.mod {
+  background: #edf1f6;
+  border-radius: 10px;
+}
+.mod .mod-content {
+  padding: 10px;
+  text-shadow: 1px 1px 0 #fff;
+}
+.mod h1 {
+  color: #003580;
+  font-size: 1.8em;
+  font-weight: normal;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: .4em;
+  margin-bottom: .4em;
+}
+.badge {
+  border-radius: 9px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, .4);
+  color: #999 !important;
+  font-size: 11px;
+  text-shadow: 0 1px 0 #fff;
+  padding: 3px 6px;
+  vertical-align: middle;
+}

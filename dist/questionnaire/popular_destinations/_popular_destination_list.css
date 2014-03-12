@@ -1,0 +1,74 @@
+#popular-destination-list {
+  min-width: 500px;
+}
+#popular-destination-list ul {
+  width: 33.33333%;
+  float: left;
+}
+#popular-destination-list li {
+  color: #0896ff;
+  font-size: 1.5em;
+  padding-right: 10px;
+}
+#popular-destination-list a {
+  display: inline-block;
+  outline: 0;
+  padding: 8px 5px 4px;
+  white-space: nowrap;
+}
+#popular-destination-list a.active {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tooltip */
+#popular-destination-list .tooltip {
+  background: #ffedbc;
+  border-radius: 6px;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  text-shadow: none;
+  opacity: 0;
+  width: 15em;
+  /* CSS3 enhancement */
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-out;
+  /* IE backward support */
+  *top: 1.8em;
+  *display: none;
+  *left: 5px;
+  *margin-top: 0;
+}
+#popular-destination-list a.active .tooltip {
+  border: 1px solid #eeae01;
+  height: auto;
+  margin-top: 5px;
+  opacity: 1;
+  overflow: visible;
+  padding: 4px;
+  position: absolute;
+  /* IE backward support */
+  *display: block;
+}
+#popular-destination-list .tooltip p {
+  color: #555;
+  font-size: 12px;
+  white-space: normal;
+}
+
+/* CSS Slant for pointer */
+#popular-destination-list .tooltip:before {
+  border: 5px solid transparent;
+  border-width: 0 6px 7px;
+  border-bottom-color: #eeae01;
+  content: '';
+  height: 0px;
+  left: 5px;
+  line-height: 0;
+  position: absolute;
+  top: -7px;
+  width: 0px;
+  z-index: 1;
+}
