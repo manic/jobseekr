@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+    - "0.8"
+before_install:
+    - "export DISPLAY=:99.0"
+    - "sh -e /etc/init.d/xvfb start"
+branches:
+    only:
+        - master
+notifications:
+    hipchat: 00e5d5a825b923f882f7f61bf3f653@JobSeekr
