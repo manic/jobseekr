@@ -13,6 +13,12 @@
       "src": "entypo"
     },
     {
+      "uid": "ef74ff62feda486fd414410e782b598a",
+      "css": "graduation-cap",
+      "code": 59401,
+      "src": "entypo"
+    },
+    {
       "uid": "6a06892e76b81e023da6ddfb38a26b37",
       "css": "doc-text",
       "code": 59397,
@@ -52,6 +58,12 @@
       "uid": "f978da58836f23373882916f05fb70b4",
       "css": "doc",
       "code": 59398,
+      "src": "linecons"
+    },
+    {
+      "uid": "4b7f817f780705a5d267ad59e855da91",
+      "css": "graduation-cap-1",
+      "code": 59402,
       "src": "linecons"
     },
     {
