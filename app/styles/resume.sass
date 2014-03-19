@@ -96,6 +96,8 @@ blockquote
     float: left
     width: 50%
     margin-bottom: 3px
+    &.private
+      display: none
     &.last-child
       color: #fff
       width: 100%
@@ -169,12 +171,15 @@ blockquote
 @media print
   h2, h2 i, .icon
     color: #069 !important
-  #summary
-    border-top-color: #069 !important
   .row-first
     padding-top: 0
   a[href]:after
     content: ''
+  #contact
+    li.private
+      display: block
+  #summary
+    border-top-color: #069 !important
   #experience
     margin-bottom: 10px
   #education
