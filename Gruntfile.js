@@ -204,7 +204,7 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/images/{,*/}*.*',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
+                        //'<%= config.dist %>/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}'
                     ]
                 }
@@ -306,22 +306,38 @@ module.exports = function (grunt) {
         // Copies remaining files to places other tasks can use
         copy: {
             dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.app %>',
-                    dest: '<%= config.dist %>',
-                    src: [
-                        '*.{ico,png,txt}',
-                        '.htaccess',
-                        'fontello/{,*/}*',
-                        'questionnaire/{,*/}*',
-                        'images/{,*/}*.webp',
-                        '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/*.*'
-                    ]
-                }]
+                files: [
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= config.app %>',
+                        dest: '<%= config.dist %>',
+                        src: [
+                            '*.{ico,png,txt}',
+                            '.htaccess',
+                            'questionnaire/{,*/}*',
+                            'images/{,*/}*.webp',
+                            '{,*/}*.html',
+                            'styles/fonts/{,*/}*.*'
+                        ]
+                    },
+                    {
+                        expand: true,
+                        dot: true,
+                        flatten: true,
+                        cwd: '<%= config.app %>',
+                        src: ['fontello/font/{,*/}*.*'],
+                        dest: '<%= config.dist %>/styles/font/'
+                    },
+                    {
+                        expand: true,
+                        dot: true,
+                        flatten: true,
+                        cwd: '<%= config.app %>',
+                        src: ['bower_components/font-awesome/fonts/{,*/}*.*'],
+                        dest: '<%= config.dist %>/styles/fonts/'
+                    }
+                ]
             },
             styles: {
                 expand: true,
