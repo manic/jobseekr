@@ -91,6 +91,7 @@ blockquote
     width: 50%
     margin-bottom: 3px
     &.last-child
+      color: #fff
       width: 100%
   span.title
     color: #666
@@ -160,6 +161,10 @@ blockquote
 // For Print
 //====================
 @media print
+  h2, h2 i, .icon
+    color: #069 !important
+  #summary
+    border-top-color: #069 !important
   .row-first
     padding-top: 0
   a[href]:after
