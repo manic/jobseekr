@@ -10,7 +10,7 @@ This folder contains my implementation for Popular Destinations.
 
 ## File List
 
-* ``base.css`` - Reusable CSS.
+* `base.css` - Reusable CSS.
 * `util.js` - Mostly for legend IE browsers.
 * `_popular_destination_list.css` - Main stylesheet.
     * I used some CSS3 effects which only takes effects on modern browsers.
