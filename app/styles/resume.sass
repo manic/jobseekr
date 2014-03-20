@@ -137,9 +137,20 @@ blockquote
     font-weight: normal
     color: #aaa
 #shortcuts
+  bottom: 10px
+  opacity: 0.5
   position: fixed
-  right: 8.2em
-  bottom: 5px
+  right: 11px
+  text-shadow: 0 1px 0 #fff
+  &:hover
+    opacity: 1
+  .btn-primary
+    text-shadow: none
+    color: #fff
+  .tooltip
+    text-shadow: none
+    font-size: 11px
+
 
 //====================
 // For Phone
@@ -186,4 +197,6 @@ blockquote
     h3, .period
       display: inline-block
   #shortcuts
+    font-size: 16px
     display: none
+    opacity: 1

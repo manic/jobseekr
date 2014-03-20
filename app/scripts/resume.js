@@ -2,6 +2,6 @@
 
     'use strict';
 
-    $('#shortcuts .btn').tooltip();
+    $('#shortcuts .btn').tooltip({container: 'body'});
 
 }());
